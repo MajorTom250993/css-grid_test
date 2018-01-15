@@ -1,0 +1,44 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+main > * {
+  background-color: goldenrod;
+  font-size: 3em;
+  padding: 10px;
+}
+
+/* Se define el GRID container  */
+
+.grid {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-areas: 
+    "header header header header"
+    "izquierda contenido contenido derecha"
+    "footer footer footer ."
+}
+
+/* Se nombran los elementos */
+
+header {
+  grid-area: header;
+}
+
+aside:first-of-type {
+  grid-area: izquierda;
+}
+
+article {
+  grid-area: contenido;
+}
+
+aside:last-of-type {
+  grid-area: derecha;
+}
+
+footer {
+  grid-area: footer;
+}
