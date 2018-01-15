@@ -17,7 +17,7 @@ main > * {
   grid-gap: 10px;
   grid-template-areas: 
     "header header header header"
-    "izquierda contenido contenido derecha"
+    "izquierda . contenido derecha"
     "footer footer footer ."
 }
 
